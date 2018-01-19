@@ -1,0 +1,122 @@
+<!--
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,700|PT+Serif:400,400i,700);
+
+html{
+    height: 100vh;
+}
+
+body {
+    background-color: #3b3d40;
+    background-image: url(http://lyfx.co/assets/img/bicycle-river-adventure.jpg);
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: center;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0px 0px 0px !important;
+    color:#eadfd6;
+    height: 100%;
+    overflow: hidden;
+}
+
+p {
+    line-height: 18px;
+}
+
+a{
+text-decoration: none;
+color:#eadfd6;
+}
+a:hover{
+text-decoration: none;
+color:#eadfd6;
+}
+header {
+    float: left;
+    padding: 0 3em
+}
+h1.logo {
+    float: left;
+    width: 130px;
+    text-indent: 100%;
+    overflow: hidden;
+    font-size: 1.5em
+}
+section {
+    padding: 0 3em 3em
+}
+
+
+section h2 {
+    font-size: 5em;
+    text-transform: uppercase;
+}
+button {
+    background: none;
+    padding: 1.1em 2em;
+    border: 1px solid;
+    font-size:1.2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin:2%;
+}
+.dark {
+    color: #eadfd6
+}
+
+.dark button.full {
+    border-color: #eadfd6;
+    background: #eadfd6;
+    color: #032a42
+}
+
+.dark button.outline {
+    border-color: #eadfd6;
+    background: none;
+    color: #eadfd6
+}
+
+.dark button.full:hover {
+    border-color: #4f8692;
+    background: #4f8692;
+    color: #eadfd6
+}
+
+
+.dark button.outline:hover {
+    border-color: #eadfd6;
+    background: #eadfd6;
+    color: #032a42
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    clear: both
+}
+
+.wrapper:before,
+.wrapper:after {
+    content: "";
+    display: table
+}
+
+.wrapper:after {
+    clear: both
+}
+
+.wrapper {
+    zoom: 1
+}
+@media only screen and (max-width:480px) {
+    button{
+        width: 100%;
+    }
+    section h2 {
+        font-size: 4em;
+        margin-top: 0;
+    }
+    h1.logo{
+        width: 100px;
+    }
+}

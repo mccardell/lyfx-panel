@@ -1,0 +1,749 @@
+/*-----------------------------
+AUTHOR: Karen Bizanha
+COMPANY: Winwin
+WEBSITE: http://winwin.digital
+EMAIL: karen@winwin.digital
+------------------------------*/
+
+/* LYFX COLOR SCHEME
+Base Cream     #eadfd6
+Dark Grey      #3b3d40
+Dark Blue      #032a42
+Water Blue     #4f8692
+*/
+
+
+/*@import url(normalize.css);*/
+/*@import url(font-awesome.css);*/
+/*@import url(venobox.css);*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background: #eadfd6;
+    color: #3b3d40
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    font-size: 1.8em
+}
+
+input,
+button,
+textarea {
+    background: none;
+    padding: 1.3em 2em;
+    border: 1px solid rgba(255,255,255,1);
+}
+
+textarea {
+    color: white !important;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 5%
+}
+
+h1 {
+    font-size: 4em
+}
+
+h2 {
+    font-size: 3em
+}
+
+h3 {
+    font-size: 2em;
+}
+
+nav ul,
+ul.social {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+nav ul li,
+ul.social li {
+    float: left
+}
+
+header {
+    float: left;
+    width: 100%;
+    padding: 0 3em
+}
+
+header nav {
+    float: right;
+    margin-top: 5em
+}
+
+header nav li a {
+    padding: 2em 0 1em 0;
+    text-decoration: none;
+    color: #eadfd6;
+    position: relative;
+    margin: 0 2em;
+    padding-right: 0;
+    padding-left: 0;
+    color: #eadfd6;
+    -webkit-transition: color 0.4s;
+    transition: color 0.4s
+}
+
+header nav li.current a,
+header nav li.current a:hover,
+header nav li.current a:focus {
+    color: #eadfd6
+}
+
+header nav li.current a::after,
+header nav li.current a::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1)
+}
+
+header nav li.current a::before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+header nav li a:hover,
+header nav li a:focus {
+    color: #eadfd6
+}
+
+header nav li a:hover::before,
+header nav li a:focus::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+header nav li a::before,
+header nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transition: transform 0.4s cubic-bezier(.22, .61, .36, 1);
+    transition: transform 0.4s cubic-bezier(.22, .61, .36, 1)
+}
+
+header nav li a::before {
+    background: #eadfd6;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s
+}
+
+header nav li a::after {
+    background: #eadfd6
+}
+
+h1.logo {
+    float: left;
+    width: 130px;
+    text-indent: 100%;
+    overflow-x: hidden;
+    font-size: 1.5em
+}
+h1.logo img{
+    height: 60px;
+}
+
+section {
+    position: absolute;
+    width: 100%; height: 100%;
+}
+
+section h2 {
+    font-size: 7em
+}
+
+.progressive-path {
+    left:-1em;
+}
+
+.appliance > form {
+    margin-top:0!important;margin-left:1em!important;margin-bottom:10em!important;
+}
+
+.progression-field {
+    font-size:.9em!important;
+    padding-top:2em!important;
+    padding-bottom:2em!important;
+    font-style:italic!important;
+}
+
+.specific-progression-label {
+    display: block;
+    margin-top:1em !important;
+}
+
+.thumbs {
+    position: absolute;
+    bottom: 11.6em;
+    right: 7em;
+}
+
+ul.thumbnails {
+    padding: 0;
+    margin: 0;
+}
+
+ul.thumbnails li {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 .95em;
+}
+
+.light button.full {
+    border-color: #3b3d40;
+    background: #3b3d40;
+    color: #eadfd6
+}
+
+.light button.outline {
+    border-color: #3b3d40;
+    background: none;
+    color: #3b3d40
+}
+
+.light button.full:hover {
+    border-color: #eadfd6;
+    background: #eadfd6;
+    color: #3b3d40
+}
+
+.light button.outline:hover {
+    border-color: #3b3d40;
+    background: #3b3d40;
+    color: #eadfd6
+}
+
+.dark {
+    background: #3b3d40;
+    color: #eadfd6
+}
+
+.dark input,
+.dark textarea {
+    border-color: #eadfd6
+}
+
+.dark button.full {
+    border-color: #eadfd6;
+    background: #eadfd6;
+    color: #032a42
+}
+
+.dark button.outline {
+    border-color: #eadfd6;
+    background: none;
+    color: #eadfd6
+}
+
+.dark button.full:hover {
+    border-color: #4f8692;
+    background: #4f8692;
+    color: #eadfd6
+}
+
+.dark button.outline:hover {
+    border-color: #eadfd6;
+    background: #eadfd6;
+    color: #032a42
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    clear: both
+}
+
+.wrapper:before,
+.wrapper:after {
+    content: "";
+    display: table
+}
+
+.wrapper:after {
+    clear: both
+}
+
+.wrapper {
+    zoom: 1
+}
+
+section.top .labeled {
+    width: 60% !important;
+    font-size: .7em !important;
+    margin-left: 4.2% !important;
+}
+
+section.top .appliance {
+    width: 55.5% !important;
+    padding: 0 !important;
+    margin-left: -0.8% !important;
+}
+
+section.top .title {
+    width: 56.66%
+}
+
+section.top .lead {
+    width: 39.33%
+}
+
+section.top {
+    background-image: url(../img/intro.jpg);
+}
+
+@media screen and (min-width: 1024px) {
+    section.top {
+        /*left: 50%;*/
+        /*margin-left: -512px;*/
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: 100% !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: scroll;
+    }
+}
+
+section.learn-more {
+    background-image: url(../img/people-hiking.jpg)
+}
+
+section.video {
+    background-image: url(../img/video.jpg);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 20% 3em;
+    margin: 5% 0
+}
+
+section.video h2 {
+    opacity: .3;
+    text-align: center
+}
+
+button.play {
+    position: relative;
+    overflow: hidden;
+    text-indent: -200em;
+    background: url(../img/play.svg) no-repeat;
+    border: none;
+    width: 10em;
+    height: 10em;
+    display: block;
+    margin: auto
+}
+section.video a.venobox.vbox-item{
+	display: flex;
+	width: 100%;
+	height: 100%
+}
+section.newsletter {
+    background-image: url(../img/snow-surf-happy.jpg);
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 3em 15%
+}
+
+section.newsletter p {
+    font-size: 2em
+}
+
+section form.newsletter input {
+    width: 70%;
+    margin: auto 2% auto auto
+}
+
+section form.newsletter button,
+section form.newsletter input {
+    font-size: 1.4em
+}
+
+section.top,
+section.learn-more,
+section.video,
+section.newsletter {
+    background-size: cover;
+    background-position: center
+}
+
+form.sign-up {
+    /*padding: 8%;*/
+    /*border: 1px solid #eadfd6;*/
+    margin: 8%
+}
+
+#open-button,
+#close-button {
+    display: none
+}
+
+form.sign-up input,
+form.sign-up button {
+    width: 100%;
+    margin: 2% 0 2% 0%
+}
+
+footer {
+    color: #606669;
+    background: #3b3d40;
+    padding: 2% 0
+}
+
+footer p {
+    font-size: 1.5em
+}
+
+footer a {
+    color: #606669;
+    text-decoration: none
+}
+
+footer a:hover {
+    opacity: .5
+}
+
+footer ul.social {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+footer ul.social>li {
+    padding: 5% 8%
+}
+
+footer .copyright {
+    text-align: center
+}
+
+#sharing {
+    padding: 0;
+    margin-top: 2em !important;
+    margin-left: 0 !important;
+}
+
+#sharing li {
+    list-style: none;
+    margin-top: 1em;
+    padding: 3em 0;
+    display: block;
+    position: relative;
+}
+
+#sharing li:first-child img {
+    width: 1.5em;
+    margin-left: .8em;
+}
+
+#sharing li:first-child a {
+    top: .65em;
+}
+
+#sharing li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgba(255,255,255,.8);
+    padding-top: 1em;
+    padding-left: 1em;
+    position: relative;
+    top: .5em;
+    left: 2em;
+}
+
+#sharing li a icon {
+    float: left;
+    padding: 1em;
+}
+
+.share-icon {
+    display: block;
+    background:rgba(255,255,255,.9);
+    width: 5em;
+    padding: 1em;
+    border-radius: .2em;
+    float: left;
+    display: block;
+    position: absolute;
+}
+
+.share-icon img {
+    width: 2.5em;
+    margin-left: .30em;
+}
+
+.adventures-list {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+}
+
+.adventures-list li {
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.adventures-list li:last-child {
+    border: none;
+}
+
+.adventures-list li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+    font-size: .8em;
+    text-align: center;
+}
+
+.adventures-list li a:hover {
+    background: rgba(255,255,255,.05);
+    color: rgba(255,255,255,.9);
+}
+
+@media only screen and (max-width:1147px) {
+    section.top .title,
+    section.top .lead {
+        width: 48%
+    }
+    section h2 {
+        font-size: 5em
+    }
+    section form.newsletter input {
+        width: 50%;
+        margin: auto 2% auto auto
+    }
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+    }
+    header {
+        margin-left:0!important;
+        padding-left:0!important;
+    }
+    header h1 {
+        width: 90px
+    }
+    textarea {
+        width: 29.8em;
+    }
+    .col {
+        margin: 1% 0 1% 0%
+    }
+    .c_12-12,
+    .c_11-12,
+    .c_10-12,
+    .c_9-12,
+    .c_8-12,
+    .c_7-12,
+    .c_6-12,
+    .c_5-12,
+    .c_4-12,
+    .c_3-12,
+    .c_2-12,
+    .c_1-12 {
+        width: 100%
+    }
+    #intro {
+        margin-left:0 !important;
+    }
+    #labeled-title {
+        width: 80% !important;
+    }
+    #appliance {
+        width: 99.5% !important;
+    }
+    #progression img {
+        width: 27.3em !important;
+        margin-left: .5em !important;
+    }
+    #completed {
+        width: 100% !important;
+        font-size: .6em !important;
+        margin-left: 0 !important;
+    }
+    .thumbs {
+        top: 60em;
+        left: 1.2em;
+        width:101%;
+    }
+    .thumbs li:first-child {
+        margin-left:.80em!important;
+    }
+    form.sign-up {
+        margin: 8% 0%;
+    }
+    section.top {
+        background-image: url(../img/intro.jpg);
+        background-size: cover !important;
+        background-position: 55em 0 !important;
+        padding: 10% 4em 22em 2em !important;
+        width: 109%;
+        height: 130%;
+        overflow-x: scroll;
+    }
+    section.top .title,
+    section.top .lead {
+        width: 100%
+    }
+    section h2 {
+        font-size: 3em
+    }
+    header h1 {
+        position: relative;
+        z-index: 1003
+    }
+    header nav {
+        position: absolute;
+        z-index: 1001;
+        width: 300px;
+        height: 100%;
+        font-size: 1.15em;
+        -webkit-transform: translate3d(-300px, 0, 0);
+        transform: translate3d(-300px, 0, 0);
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        background: #3b3d40;
+        margin: 0;
+        top: 0;
+        left: 0
+    }
+    header nav ul {
+        margin: 10em 0
+    }
+    header nav ul li {
+        float: none;
+        padding: 5%
+    }
+    .show-menu header nav {
+        transform: translate3d(0, 0, 0);
+        -webkit-box-shadow: 120px 0 0 0 rgba(28, 29, 31, .7);
+        -moz-box-shadow: 120px 0 0 0 rgba(28, 29, 31, .7);
+        box-shadow: 120px 0 0 0 rgba(28, 29, 31, .7)
+        -webkit-transition: -webkit-box-shadow 1.2s;
+        transition: box-shadow 1.01s;
+    }
+    #open-button {
+        top: 1.8em !important;
+        right: 1em !important;
+    }
+    #open-button,
+    #close-button {
+        display: block
+    }
+    .menu-button {
+        position: absolute;
+        z-index: 1000;
+        margin: 2em;
+        padding: 0;
+        width: 2.5em;
+        height: 2.25em;
+        border: none;
+        text-indent: 2.5em;
+        font-size: 1.5em;
+        color: transparent;
+        background: transparent;
+        right: 0
+    }
+    .menu-button::before {
+        position: absolute;
+        top: 1.5em;
+        right: 0;
+        background: linear-gradient(#eadfd6 20%, transparent 20%, transparent 40%, #eadfd6 40%, #eadfd6 60%, transparent 60%, transparent 80%, #eadfd6 80%);
+        content: '';
+        width: 20px;
+        height: 15px
+    }
+    .close-button {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        overflow: hidden;
+        text-indent: 16px;
+        border: none;
+        z-index: 1001;
+        background: transparent;
+        color: transparent
+    }
+    .close-button::before,
+    .close-button::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 50%;
+        top: 0;
+        left: 50%;
+        background: #eadfd6
+    }
+    .close-button::before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg)
+    }
+    .close-button::after {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+    section form.newsletter input {
+        width: 100%;
+        margin: 0
+    }
+    section form.newsletter button {
+        width: 100%
+    }
+    footer {
+        text-align: center
+    }
+    footer h1.logo {
+        margin: 0 auto;
+        float: none
+    }
+    button.outline{
+    	width:100%;
+    }
+}
