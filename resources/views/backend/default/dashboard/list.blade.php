@@ -59,6 +59,7 @@
          			</div>
          		</div>
 				<div class="content">
+					<?php if ($consumers->count() > 0) { ?><h5 style="font-weight: 700"><?php echo $consumers->count(); ?> items found</h5><?php } ?>
 					<table class="no-border list-consumers">
 						<thead class="no-border">
 							<tr>

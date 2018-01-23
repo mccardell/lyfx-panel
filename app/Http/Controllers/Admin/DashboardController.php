@@ -351,7 +351,8 @@ class DashboardController extends Controller
 				// ->where(['what-is-your-passion' => ['$exists' => true]]);
 
 	    	}else{
-		    	$consumers = Consumers::where(['what-is-your-passion' => ['$exists' => true]])->orderBy('createdAt', 'desc');
+		    	#$consumers = Consumers::where(['what-is-your-passion' => ['$exists' => true]])->orderBy('createdAt', 'desc');
+			$consumers = Consumers::where([]])->orderBy('createdAt', 'desc');
 	    	}
 
 	    	if($request['zipSearch']){
